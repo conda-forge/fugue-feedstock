@@ -26,7 +26,7 @@ requirements:
     - python >=3.6
     - qpd >=0.2.4
     - sqlalchemy
-    - triad >=0.5.4
+    - triad >=0.5.5
 
 test:
   imports:
