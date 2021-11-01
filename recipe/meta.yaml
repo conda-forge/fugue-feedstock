@@ -1,5 +1,5 @@
 {% set name = "fugue" %}
-{% set version = "0.6.3" %}
+{% set version = "0.6.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fugue-{{ version }}.tar.gz
-  sha256: 387eb5d549dd361030243d14d06d4921ff1fd44241208b615ab255205501b536
+  sha256: 7fc48d2295304546f77edc4b6de8900d7ff40cafbd2fdec10471662bfa3d53cb
 
 build:
   number: 0
@@ -26,7 +26,7 @@ requirements:
     - python >=3.6
     - qpd >=0.2.4
     - sqlalchemy
-    - triad >=0.5.4
+    - triad >=0.5.5
 
 test:
   imports:
