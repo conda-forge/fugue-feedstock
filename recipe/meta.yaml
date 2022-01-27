@@ -43,6 +43,7 @@ test:
     - pip check
   requires:
     - dask
+    - ibis-framework
     - pip
     - python-duckdb
 
