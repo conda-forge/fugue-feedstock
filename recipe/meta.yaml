@@ -53,6 +53,7 @@ test:
     - jupyterlab
     - notebook
     - openjdk
+    - pandavro
     - pip
     - pyarrow>=5.0.0
     - pyspark
