@@ -52,7 +52,7 @@ test:
     - jinja2
     - jupyterlab
     - notebook
-    - pandas ==1.0.2
+#     - pandas ==1.0.2
     - pip
     - pyarrow>=5.0.0
     - pyspark
