@@ -56,7 +56,7 @@ test:
     - fugue_version
   commands:
     - pip list | grep -E '{{ name }}\s+{{ version }}'
-    - pytest -vvv --capture=tee-sys tests
+    - pytest -vvv --capture=tee-sys -k "not flask_service" tests
   requires:
     - antlr4-python3-runtime
     - atpublic >=2.3,<3
