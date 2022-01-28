@@ -51,6 +51,7 @@ test:
     - jupyterlab
     - pandas ==1.0.2
     - pip
+    - pyspark
     - pytest
     - python-duckdb
     - regex >=2021.7.6,<2022.0.0
