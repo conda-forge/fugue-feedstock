@@ -42,7 +42,7 @@ test:
     - fugue_test
     - fugue_version
   commands:
-    - pip check
+    - pip list | grep -E '{{ name }}\s+{{ version }}'
     - pytest -vvv --capture=tee-sys tests
   requires:
     - antlr4-python3-runtime
