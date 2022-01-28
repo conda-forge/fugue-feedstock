@@ -33,10 +33,23 @@ test:
     - tests
   imports:
     - fugue
+    - fugue.collections
+    - fugue.column
+    - fugue.dataframe
+    - fugue.execution
+    - fugue.extensions
+    - fugue.extensions.creator
+    - fugue.extensions.outputter
+    - fugue.extensions.processor
+    - fugue.extensions.transformer
+    - fugue.rpc
+    - fugue.workflow
     - fugue_dask
     - fugue_duckdb
     - fugue_ibis
+    - fugue_ibis.execution
     - fugue_notebook
+    - fugue_notebook.nbextension
     - fugue_spark
     - fugue_sql
     - fugue_test
