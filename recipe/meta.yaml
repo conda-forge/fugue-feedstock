@@ -63,6 +63,7 @@ test:
     - antlr4-python3-runtime
     - atpublic >=2.3,<3
     - dask
+    - flask
     - ibis-framework >=2
     - jinja2
     - jupyterlab
