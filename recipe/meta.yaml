@@ -61,7 +61,6 @@ test:
     - pytest -vvv --capture=tee-sys tests/fugue_dask
     - pytest -vvv --capture=tee-sys tests/fugue_duckdb
     - pytest -vvv --capture=tee-sys tests/fugue_ibis
-    - pytest -vvv --capture=tee-sys tests/fugue_notebook
     - pytest -vvv --capture=tee-sys tests/fugue_sql
   requires:
     - antlr4-python3-runtime
