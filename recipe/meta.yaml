@@ -1,5 +1,5 @@
 {% set name = "fugue" %}
-{% set version = "0.6.4" %}
+{% set version = "0.6.6" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fugue-{{ version }}.tar.gz
-  sha256: 7fc48d2295304546f77edc4b6de8900d7ff40cafbd2fdec10471662bfa3d53cb
+  sha256: 270ff2bf638539ceea2c3bb1a2756b66a891b528eb3cf380c1e469fe157362d4
 
 build:
   number: 0
@@ -21,17 +21,29 @@ requirements:
     - python >=3.6
   run:
     - adagio >=0.2.3
+    - antlr4-python3-runtime >=4.9,<4.10
+    - importlib-metadata
     - pandas >=1.0.2
     - pyarrow >=0.15.1
     - python >=3.6
-    - qpd >=0.2.4
+    - qpd >=0.2.6
     - sqlalchemy
-    - triad >=0.5.5
+    - triad >=0.6.0
 
 test:
   imports:
     - fugue
-    - fugue._utils
+    - fugue.collections
+    - fugue.column
+    - fugue.dataframe
+    - fugue.execution
+    - fugue.extensions
+    - fugue.extensions.creator
+    - fugue.extensions.outputter
+    - fugue.extensions.processor
+    - fugue.extensions.transformer
+    - fugue.rpc
+    - fugue.workflow
   commands:
     - pip check
   requires:
