@@ -21,17 +21,33 @@ requirements:
     - python >=3.6
   run:
     - adagio >=0.2.3
+    - antlr4-python3-runtime >=4.9,<4.10
+    - importlib-metadata
     - pandas >=1.0.2
     - pyarrow >=0.15.1
     - python >=3.6
-    - qpd >=0.2.4
+    - qpd >=0.2.6
     - sqlalchemy
-    - triad >=0.5.5
+    - triad >=0.6.0
 
 test:
   imports:
     - fugue
-    - fugue._utils
+    - fugue.collections
+    - fugue.column
+    - fugue.dataframe
+    - fugue.execution
+    - fugue.execution.creator
+    - fugue.execution.outputter
+    - fugue.execution.processor
+    - fugue.execution.transformer
+    - fugue.extensions
+    - fugue.extensions.creator
+    - fugue.extensions.outputter
+    - fugue.extensions.processor
+    - fugue.extensions.transformer
+    - fugue.rpc
+    - fugue.workflow
   commands:
     - pip check
   requires:
