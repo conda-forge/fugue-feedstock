@@ -20,15 +20,15 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - adagio >=0.2.3
-    - antlr4-python3-runtime >=4.9,<4.10
-    - importlib-metadata
+    - adagio >=0.2.4
+    - fugue-sql-antlr >=0.1.0
+    - jinja2
     - pandas >=1.0.2
     - pyarrow >=0.15.1
     - python >=3.6
-    - qpd >=0.2.6
+    - qpd >=0.3.1
     - sqlalchemy
-    - triad >=0.6.0
+    - triad >=0.6.6
 
 test:
   imports:
