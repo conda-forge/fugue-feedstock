@@ -9,6 +9,8 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fugue-feedstock
 
 Summary: An abstraction layer for distributed computation
 
+Documentation: https://fugue-tutorials.readthedocs.io/
+
 Fugue is a unified interface for distributed computing that lets
  users execute Python, pandas, and SQL code on Spark and Dask
  without rewrites. It is meant for data scientists/analysts who want

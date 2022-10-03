@@ -1,5 +1,5 @@
 {% set name = "fugue" %}
-{% set version = "0.7.2" %}
+{% set version = "0.7.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fugue-{{ version }}.tar.gz
-  sha256: 8009315e371ab622aed326438c69ba4ad03126c618d48e839c3b18fa1917d441
+  sha256: 6d9ac12b473905770f2496f70a8581ed7bed26b535c686fa994c18e23453d507
 
 build:
   number: 0
@@ -18,17 +18,17 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
     - adagio >=0.2.4
-    - fugue-sql-antlr >=0.1.0
+    - fugue-sql-antlr >=0.1.1
     - jinja2
     - pandas >=1.0.2
     - pyarrow >=0.15.1
-    - python >=3.6
+    - python >=3.7
     - qpd >=0.3.1
     - sqlalchemy
-    - triad >=0.6.6
+    - triad >=0.6.9
 
 test:
   imports:
@@ -38,10 +38,6 @@ test:
     - fugue.dataframe
     - fugue.execution
     - fugue.extensions
-    - fugue.extensions.creator
-    - fugue.extensions.outputter
-    - fugue.extensions.processor
-    - fugue.extensions.transformer
     - fugue.rpc
     - fugue.workflow
   commands:
@@ -51,6 +47,7 @@ test:
 
 about:
   home: http://github.com/fugue-project/fugue
+  doc_url: https://fugue-tutorials.readthedocs.io/
   summary: An abstraction layer for distributed computation
   license: Apache-2.0
   license_file: LICENSE  # license file manually packaged.
