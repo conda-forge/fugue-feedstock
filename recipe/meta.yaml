@@ -26,9 +26,10 @@ requirements:
     - pandas >=1.0.2
     - pyarrow >=0.15.1
     - python >=3.7
-    - qpd >=0.3.1
+    - qpd >=0.4.0
     - sqlalchemy
-    - triad >=0.6.9
+    - sqlglot
+    - triad >=0.8.0
 
 test:
   imports:
