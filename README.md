@@ -1,11 +1,11 @@
-About fugue
-===========
+About fugue-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fugue-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/fugue-project/fugue
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fugue-feedstock/blob/main/LICENSE.txt)
 
 Summary: An abstraction layer for distributed computation
 
