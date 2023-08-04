@@ -1,5 +1,5 @@
 {% set name = "fugue" %}
-{% set version = "0.8.5" %}
+{% set version = "0.8.6" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fugue-{{ version }}.tar.gz
-  sha256: e6bee3339d1cfeed3bec5967884914da492305fe19262a718b2796481e9a7cfa
+  sha256: 4e30c4edbaee31a768b9a097e60d29b39d736a0302d3b611075de3fa73162d09
 
 build:
   number: 0
@@ -26,10 +26,10 @@ requirements:
     - pandas >=1.2.0
     - pyarrow >=0.15.1
     - python >=3.7
-    - qpd >=0.4.3
+    - qpd >=0.4.4
     - sqlglot
-    - triad >=0.9.0
-    
+    - triad >=0.9.1
+
     # For fugue-sql-antlr
     - antlr4-python3-runtime <4.12,>=4.11.1
 
