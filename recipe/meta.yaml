@@ -21,17 +21,7 @@ requirements:
     - python >=3.8
   run:
     - adagio >=0.2.4
-    - fugue-sql-antlr >=0.1.6
-    - jinja2
-    - pandas >=1.2.0
-    - pyarrow >=0.15.1
-    - python >=3.8
-    - qpd >=0.4.4
-    - sqlglot
-    - triad >=0.9.3
-
-    # For fugue-sql-antlr
-    - antlr4-python3-runtime <4.12,>=4.11.1
+    - triad >=0.9.6
 
 test:
   imports:
