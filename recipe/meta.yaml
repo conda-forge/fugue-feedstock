@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.8
     - adagio >=0.2.4
-    - triad >=0.9.6
+    - triad >=0.9.7
 
 test:
   imports:
