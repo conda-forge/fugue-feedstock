@@ -1,5 +1,5 @@
 {% set name = "fugue" %}
-{% set version = "0.9.2" %}
+{% set version = "0.9.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fugue-{{ version }}.tar.gz
-  sha256: d1cbe61d812378d61d65d6fbcef3a6d87ed7a5ca244504434af65245d1b08494
+  sha256: afa99b41872fe2087cfedf8b391a60c20443360fd1ba9c87479369c0356006f9
 
 build:
   number: 0
