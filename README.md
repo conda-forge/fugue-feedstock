@@ -12,15 +12,14 @@ Summary: An abstraction layer for distributed computation
 Documentation: https://fugue-tutorials.readthedocs.io/
 
 Fugue is a unified interface for distributed computing that lets
- users execute Python, pandas, and SQL code on Spark and Dask
- without rewrites. It is meant for data scientists/analysts who want
- to focus on defining logic rather than worrying about execution. It
- is also suitable for SQL users wanting to use SQL to define
- end-to-end workflows in pandas, Spark, and Dask. Data scientists
- using pandas wanting to take advantage of Spark or Dask with
- minimal effort, as well as big data practitioners finding testing
- code to be costly and slow would also find Fugue useful.
-
+users execute Python, pandas, and SQL code on Spark and Dask
+without rewrites. It is meant for data scientists/analysts who want
+to focus on defining logic rather than worrying about execution. It
+is also suitable for SQL users wanting to use SQL to define
+end-to-end workflows in pandas, Spark, and Dask. Data scientists
+using pandas wanting to take advantage of Spark or Dask with
+minimal effort, as well as big data practitioners finding testing
+code to be costly and slow would also find Fugue useful.
 
 Current build status
 ====================
