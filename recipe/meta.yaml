@@ -22,8 +22,8 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - adagio >=0.2.4
-    - triad >=0.9.7
+    - triad >=1.0.0
+    - adagio >=0.2.6
 
 test:
   imports:
