@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: fugue
-  version: "0.9.4"
+  version: "0.9.5"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/fugue-${{ version }}.tar.gz
-  sha256: 3725eeb3f06301d7e2812940a099e9bc2db9b863987b80124e39a6399024503f
+  sha256: 01e82574cc580e2217ee34322a76ef702e8da8d40839d1485eb6c741a527ce1f
 
 build:
   number: 0
