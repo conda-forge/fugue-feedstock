@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: fugue
-  version: "0.9.7"
+  version: "0.9.8"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/fugue-${{ version }}.tar.gz
-  sha256: 3e38d43ffc4bcdca78ed80628d4fb8bb707ca1fdf3b2abe9b8793e80ac968970
+  sha256: 0d5f393bd2ca8a1be23f9b9024381ff8baf4414407a97c4ec11960681d4fb926
 
 build:
   number: 0
@@ -21,18 +21,21 @@ requirements:
   host:
     - pip
     - python ${{ python_min }}.*
-    - setuptools
+    - setuptools >=61.0
   run:
     - python >=${{ python_min }}
-    - triad >=1.0.0
+    - triad >=1.0.1
     - adagio >=0.2.6
+    - pandas <3
 
 tests:
   - python:
       imports:
         - fugue
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: An abstraction layer for distributed computation
