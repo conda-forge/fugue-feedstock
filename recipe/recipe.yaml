@@ -21,18 +21,21 @@ requirements:
   host:
     - pip
     - python ${{ python_min }}.*
-    - setuptools
+    - setuptools >=61.0
   run:
     - python >=${{ python_min }}
-    - triad >=1.0.0
+    - triad >=1.0.1
     - adagio >=0.2.6
+    - pandas <3
 
 tests:
   - python:
       imports:
         - fugue
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: An abstraction layer for distributed computation
