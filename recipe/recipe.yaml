@@ -22,11 +22,12 @@ requirements:
     - pip
     - python ${{ python_min }}.*
     - setuptools >=61.0
+    - wheel
   run:
     - python >=${{ python_min }}
-    - triad >=1.0.1
+    - triad >=1.0.4
     - adagio >=0.2.6
-    - pandas <3
+    - pandas
 
 tests:
   - python:
